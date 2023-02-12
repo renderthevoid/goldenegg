@@ -1,0 +1,11 @@
+$karla: "Karla", sans-serif;
+
+*, 
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: $karla;
+    background: rgb(8, 8, 8);
+}

@@ -1,0 +1,10 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background: rgb(8, 8, 8);
+}/*# sourceMappingURL=style.min.css.map */
