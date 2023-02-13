@@ -11,10 +11,104 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <a href="#" class="_icon-inst">Бубубу</a>
+
+    <div class="wrapper">
+
+        <section class="home">
+            <img class="home__image" src="image/main.png" alt="">
+            <!-- <video class="home__video" src="img/main.mp4" autoplay loop muted></video> -->
+            <div class="home__container">
+                <div class="container">
+                    <header class="header">
+                        <nav class="menu">
+                            <ul class="menu__items">
+                                <li class="menu__item _active"><a href="#about">О ресторане</a></li>
+                                <li class="menu__item"><a href="#team">Команда</a></li>
+                                <li class="menu__item"><a href="#order">Заказать</a></li>
+                                <li class="menu__logo"><img src="image/logo.png" alt=""></li>
+                                <li class="menu__item"><a href="#menu">Меню</a></li>
+                                <li class="menu__item"><a href="#events">Мероприятия</a></li>
+                                <li class="menu__item"><a href="#contacts">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+                <div class="container home__container-center">
+                    <div class="home__timework">Пн - Пт: 8 - 22, Сб - Вс: 9 - 24</div>
+                    <div class="home__text">
+                        <h6 class="home__subtitle _subtitle">Ресторан</h6>
+                        <h1 class="home__title _title">Golden Egg</h1>
+                        <div class="home__buttons">
+                            <a href="#order" class="btn button-order">Закзать столик</a>
+                            <a href="#about" class="btn button-about">О ресторане</a>
+                        </div>
+                        <a href="#about" class="_icon-arrow arrow-about"></a>
+                    </div>
+                    <div class="home__socials">
+                        <a href="#" target="_blank" class="_icon-facebook"></a>
+                        <a href="#" target="_blank" class="_icon-twitter"></a>
+                        <a href="#" target="_blank" class="_icon-inst"></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container about__container">
+                <div class="about__text">
+                    <h2 class="text">О ресторане</h2>
+                    <p class="about__intro_title">
+                        Волшебная атмосфера, безукоризненное обслуживание, изысканный интерьер и, самое главное, 
+                        богатейший выбор вкуснейших блюд отменного качества – именно эти характеристики привлекают гостей в наш ресторан
+                    </p>
+                    <p class="about__intro_text">
+                        Официанты этого заведения знают все тонкости приготовления блюд, 
+                        они подскажут гостям наиболее подходящие для них яства. Тут хорошо знают постоянных клиентов, умело угождая их вкусам.
+                    </p>
+                    <p class="about__intro_text">
+                        Идеально дополняет ресторан уютная кофейня, находящаяся на первом этаже. 
+                        Чашечка изумительного кофе и сладости от местного кондитера зарядят вас бодростью и позитивной энергией.
+                    </p>
+                </div>
+                <div class="about__image">
+                    <img src="image/about.jpg" alt="" class="restaraunt">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team" id="team">
+            <div class="container">
+                <h6>Наша команда</h6>
+            </div>
+            <div class="container team__container">
+                <div class="team__image">
+                    <img src="image/chef.jpg" alt="">
+                    <div class="circle"></div>
+                </div>
+                <div class="team__text">
+                    <h2 class="team__chef">Шеф-повар</h2>
+                    <p class="team__intro_title">
+                        За подбор продуктов и приготовление вкусных  блюд отвечает наш высококвалифицированный шеф-повар. Блюда в его исполнении превращаются в настоящие шедевры. 
+                        Никто не останется равнодушным к такому непревзойденному сочетанию. 
+                    </p>
+                    <p class="team__intro_text">
+                        Своей работой мы хотим радовать каждого нашего посетителя. 
+                        Мы гарантируем всем клиентам, что время, проведенное в нашем заведении, будет отличаться особым теплом и изысканным вкусом.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
     <script src="js/swiper.min.js">
         const swiper = new Swiper(".swiper");
     </script>

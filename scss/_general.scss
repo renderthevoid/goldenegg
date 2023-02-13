@@ -1,11 +1,75 @@
 $karla: "Karla", sans-serif;
-
-*, 
-*::after,
-*::before {
-    box-sizing: border-box;
+//цвета
+$white: #fff;
+$yellow: #E8C300;
+$text: #000000;
+$white-opacity: rgba(255, 255, 255, 0.5);
+$black-opacity: rgba(0, 0, 0, 0.5);
+//контейнеры
+$wrapper: 1440px;
+$container: 1230px;
+$mc: 0 auto;
+$fontsize: 18px;
+/////
+@mixin flex($jc, $ai) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $jc;
+    align-items: $ai;
+}
+@mixin line {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 5px;
+    background-color: $yellow;
+    border-radius: 50px;
+    margin: $mc;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+@mixin img {
+    filter: drop-shadow(0px 0px 50px $black-opacity);
+    border-radius: 5px;
 }
 body {
+    background-color: $white;
     font-family: $karla;
-    background: rgb(8, 8, 8);
+    color: $text;
+    font-size: $fontsize;
+}
+
+.wrapper {
+    max-width: $wrapper;
+    margin: $mc;
+    padding: 0 15px;
+}
+.container {
+    max-width: $container;
+    margin: $mc;
+}
+.circle {
+    width: 250px;
+    height: 250px;
+    border: 20px solid $yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    filter: drop-shadow(0px 0px 100px $black-opacity);
+}
+section {
+    h2 {
+        font-weight: 400;
+        font-size: 42px;
+        text-transform: uppercase;
+        &::after {
+            @include line;
+        }
+    }
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 26px;
+    }
 }

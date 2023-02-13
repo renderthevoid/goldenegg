@@ -1,0 +1,35 @@
+.menu {
+    @include flex(center, center);
+    &__items {
+        @include flex(center, center);
+        margin: 0 5px;
+    }
+    &__item {
+        margin: 0 5px;
+        a {
+            color: $white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 700;
+            display: block;
+            padding: 40px 25px;
+            transition: 0.3s;
+            border-top: 5px solid transparent;
+            &:hover {
+                color: $yellow;
+                border-top: 5px solid $yellow;
+            }
+            &:active {
+                color: $white;
+            }
+        }
+    }
+    &__logo {
+        margin: 0 70px;
+        img {
+            position: relative;
+            top: 15px;
+        }
+    }
+}

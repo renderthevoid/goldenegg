@@ -1,0 +1,38 @@
+.about {
+    padding-top: 100px;
+    padding-bottom: 105px;
+    &__container {
+        @include flex(space-between, center)
+    }
+    .text {
+    }
+    &__text {
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+    }
+    &__intro {
+        &_title {
+            font-weight: 700;
+        }
+
+        &_text {
+        }
+    }
+
+    &__image {
+        width: 50%;
+        max-width: 500px;
+        position: relative;
+
+        .restaraunt {
+            width: 475px;
+            height: 475px;
+            @include img;
+        }
+        .circle {
+            right: 0;
+            transform: translate(40%, -50%);
+        }
+    }
+}
